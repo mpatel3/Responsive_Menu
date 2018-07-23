@@ -1,0 +1,109 @@
+[
+    {
+      "menuID": 0,
+      "menuName": "Home",
+      "childNodes": []
+    },
+    {
+      "menuID": 1,
+      "menuName": "About",
+      "childNodes": [
+          {
+            "menuID": 21,
+            "menuName": "Success Mantra",
+            "childNodes": []
+          },
+          {
+            "menuID": 22,
+            "menuName": "Who we Are",
+            "childNodes": []
+          },
+          {
+            "menuID": 23,
+            "menuName": "Out Moto",
+            "childNodes": []
+          },
+          {
+            "menuID": 24,
+            "menuName": "What we Do",
+            "childNodes": []
+          }
+      ]
+    },
+    {
+      "menuID": 2,
+      "menuName": "Long Long Long Long Menu Name",
+      "childNodes": []
+    },
+    {
+      "menuID": 3,
+      "menuName": "News",
+      "childNodes": []
+    },
+    {
+      "menuID": 4,
+      "menuName": "Technology",
+      "childNodes": []
+    },
+    {
+      "menuID": 5,
+      "menuName": "Products",
+      "childNodes": []
+    },
+    {
+      "menuID": 6,
+      "menuName": "Blog",
+      "childNodes": []
+    },
+    {
+      "menuID": 7,
+      "menuName": "Case studies",
+      "childNodes": []
+    },
+    {
+      "menuID": 8,
+      "menuName": "Verticals",
+      "childNodes": []
+    },
+    {
+      "menuID": 9,
+      "menuName": "PortFolio",
+      "childNodes": [
+            {
+                "menuID": 25,
+                "menuName": "Business Intelligence",
+                "childNodes": []
+            },
+            {
+                "menuID": 26,
+                "menuName": "Web Services",
+                "childNodes": []
+            },
+            {
+                "menuID": 27,
+                "menuName": "Digital Platform",
+                "childNodes": []
+            },
+            {
+                "menuID": 28,
+                "menuName": "e-Commerce",
+                "childNodes": []
+            }
+        ]
+    },
+    {
+      "menuID": 10,
+      "menuName": "Testimonials",
+      "childNodes": []
+    },
+    {
+      "menuID": 11,
+      "menuName": "Services",
+      "childNodes": []
+    },
+    {
+      "menuID": 12,
+      "menuName": "Partners",
+      "childNodes": []
+    }
+  ]

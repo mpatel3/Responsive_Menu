@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+/* normlize */
+body {
+    margin:0;
+}
+
+/* down arrow hex font size */
+.look-for-more {
+    font-size: 0.50em;
+    font-weight: 800;
+}
+
+/**
+* Transition for good look and feel
+*/
+header,nav, a, ul, li {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s; 
+    -o-transition: all 1s;
+}
+
+/* un-ordered list */
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+/* horizontal list*/
+li {
+    float: left;
+    border-right: 1px solid #fff;
+}
+
+/* styling menu links */
+li a {
+    display: block;
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #31333ee3;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 2px;
+}
+
+/* styling hover state for parent level links*/
+li:hover a {
+    background: #3ca7d0;
+}
+
+/* styling un-ordered list in dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* styling hover state dropdown links*/
+li:hover ul a:hover {
+    background: #3ca7d0;
+    color: #fff;
+}
+
+/* hide dropdowns-list intially */
+li ul {
+    display: none;
+    position: absolute;
+}
+
+/* keep list-items in dropdowns vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+/* style links in nested-list items */
+li ul li a {
+    width: 180px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* display nested-list on hovering over */
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/* Make dropdown links appear inline*/
+.drop-down-menu > ul {
+    position: absolute;
+    right: 1px;
+    display: none;
+}
+
+.drop-down-menu > ul li ul {
+    position: static;
+    display: none;
+}
+
+.drop-down-menu ul li a {
+    width: 195px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*Create vertical spacing*/
+.drop-down-menu li {
+    margin-bottom: 1px;
+    border-right: none;
+}
+
+/* styling 'display menu' label button and hide it by default */
+.display-menu {
+    background: #3ca7d0;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    display: none;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*display menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #wrapper_menu_nav{
+    display: block;
+}
+
+/* media query to show menu-link items on one stack*/
+
+@media screen and (max-width : 551px){
+    
+    /* making links in dropdown to be appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    
+    /* creating vertical spacing between vertical links */
+    li {
+        margin-bottom: 1px;
+    }
+    
+    /* width shuld be 100% for all items */
+    ul li, li a {
+        width: 100%;
+    }
+    
+    /* change position : so it will appear in proper DOM order */
+    li ul {
+        position: static;
+    }
+    
+    /* change width : so it will display fully in single line */
+    li ul li a {
+        width: auto;
+    }
+
+    /* displaying 'display-menu' button when media-query is enabled */
+    .display-menu {
+        display:block;
+    }
+}
