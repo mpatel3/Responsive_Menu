@@ -12,6 +12,7 @@
 2. If Reduce/Increase screen size it will dynamically going to adjust menu every time.
 3. Added media-query support for Mobile devices.
     * For Mobile devices menu items will stack over one another.
+    * On mobile screen : "Display Menu" button will be displayed. Click on that button to show menu content.
 4. Technlogies used : CSS and JavaScript
 
 **Note**
